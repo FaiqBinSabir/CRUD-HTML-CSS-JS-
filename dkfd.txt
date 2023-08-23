@@ -1,0 +1,93 @@
+ <div class="container">
+        <h2>CRUD Operations</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter email">
+            <label for="Phone">Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter phone Number">
+        </div>
+     
+        <button id="addBtn">Add</button>
+        <button id="Deletebtn">Delete</button>
+
+        <h2>Records</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody id="recordsTable">
+                <!-- record!!! -->
+            </tbody>
+        </table>
+    </div>
+
+    ./////////////// style .class
+
+    body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZlS7l08EFtPcYpH3iRUoaPpzYjgD9TPrxQ&usqp=CAU');
+    background-repeat: no-repeat;
+     background-size: cover; 
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+button:hover {
+    background-color: green;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
